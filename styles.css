@@ -1,0 +1,87 @@
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #1C1C1E;
+  border: 2px solid #00FFC8;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 200, 0.2);
+  padding: 15px;
+}
+
+.display {
+  background-color: #0A0A0A;
+  color: #00FFC8;
+  padding: 20px;
+  text-align: right;
+  font-size: 36px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 0px 8px rgba(0, 255, 200, 0.3);
+}
+
+.first-row, 
+.second-row, 
+.third-row, 
+.fourth-row, 
+.fifth-row {
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.first-row div,
+.second-row div,
+.third-row div,
+.fourth-row div,
+.fifth-row div {
+  background-color: #1F1F21;
+  color: #E0E0E0;
+  border: 1px solid #2A2A2C;
+  border-radius: 8px;
+  width: 70px;
+  height: 70px;
+  font-size: 24px;
+  margin: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: center;
+  line-height: 80px;
+}
+
+.first-row div:hover,
+.second-row div:hover,
+.third-row div:hover,
+.fourth-row div:hover,
+.fifth-row div:hover {
+  background: #28282A;
+  color: #00FFC8;
+  border-color: #00FFC8;
+  box-shadow: 0px 0px 10px rgba(0, 255, 200, 0.4);
+}
+
+.first-row div:active,
+.second-row div:active,
+.third-row div:active,
+.fourth-row div:active,
+.fifth-row div:active {
+  background: #00FFC8;
+  color: #0A0A0A;
+  box-shadow: inset 0px 0px 8px rgba(0, 255, 200, 0.6);
+}
+
+.ac-button {
+  flex-grow: 2;
+}
+
+.zero-button {
+  flex-grow: 3;
+}
